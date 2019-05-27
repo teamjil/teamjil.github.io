@@ -63,10 +63,10 @@
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item about-li">
                 <a class="nav-link about" href="#">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item jil-li">
                 <a class="nav-link" href="#">What's JIL?</a>
             </li>
         </ul>
@@ -190,8 +190,9 @@
     
 <!--Paragraph 3-->   
     <div class="row p3" style="">
-  <div class="col-md-6">
-      <div id="slider-wrap">
+<!--Gallery        -->
+<!--  <div class="col-md-6">-->
+      <!-- <div id="slider-wrap">
       	  <ul id="slider">
               
           	 <li data-color="#1abc9c">
@@ -244,6 +245,7 @@
     
           
            <!--controls-->
+<!--
           <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
           <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
           <div id="counter"></div>
@@ -252,19 +254,21 @@
             <ul>
             </ul>
           </div>
+-->
           <!--controls-->  
                  
-</div>
+<!--</div>-->
 
-      
-
-    </div>
+<!--</div>-->
+<!--Gallery        -->
         <div class="col-md-6">
 
            <p>Rather than presenting an illustrated journey, the exhibition presents visitors with an immersive, soundscape-driven experience that draws an imaginary journey from an object to the artwork, making the journey an exciting experience to be discovered by children and adults alike.
 
-    The project is a collaboration between MO Museum and London-based interactive designers Inga Galvanauskaite, Lukas Valiauga and Justas Motuzas, and curators Marius Armonas and Gabriele Radzeviciute.</p>
-           </div>
+        The project is a collaboration between MO Museum and London-based interactive designers Inga Galvanauskaite, Lukas Valiauga and Justas Motuzas, and curators Marius Armonas and Gabriele Radzeviciute.</p>
+            
+            <a href="#">Get Press release</a>
+       </div>
     </div>          
 <!--Paragraph 3-->    
       
@@ -471,7 +475,18 @@
             });
           });
     </script>
-     
+      
+      
+<script>
+      
+      $('.about-li').click(function(){
+         console.log('about');
+      });
+    
+    $('.jil-li').click(function(){
+         console.log('jil');
+      });
+      </script>     
       
   </body>
 </html>
