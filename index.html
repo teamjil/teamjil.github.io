@@ -9,24 +9,7 @@
       <link rel="stylesheet" href="/assets/css/slider.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">  
       
-      <style>
-          .wrapper{
-              display: none;
-          }
-          .loader{
-              background-color: black;
-              color: white;
-              text-align: center;
-              width: 100vw;
-              height: 100vh;
-              position: fixed;
-              z-index: 222222;
-          }
-          .loader p{
-              padding-top: 45vh;
-              font-size: 18pt;
-          }
-      </style>      
+      
       <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css"/>
       <link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css"/>
       <link rel="stylesheet" type="text/css" href="assets/css/main-stylesheet.css">
@@ -40,7 +23,14 @@
 <title>Starting Point</title>
   </head>
   <body>
-      <div class="loader"><p>LOADING...</p></div>
+      <div class="loader">
+          <div class="loader-wrapper">
+              <div class="spinner-border text-light" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <p>loading</p>
+          </div>
+      </div>
       <div class="wrapper">
 <nav class="navbar-default navbar navbar-expand-md navbar-dark" id="nav" >
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
@@ -472,16 +462,15 @@
     });
 
     </script>
-      <script>
-      
-          $(document).ready(function(){
-              console.log('ready');
-              $('.loader').hide();
+    <script>
+          $(window).on("load",function(){
+             console.log('ready');
+             $('.loader').hide();
              $( ".wrapper" ).fadeIn( "fast", function() {
-    // Animation complete
-  });
+                 // Animation complete
+            });
           });
-      </script>
+    </script>
      
       
   </body>
