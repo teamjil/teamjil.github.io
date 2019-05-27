@@ -261,7 +261,7 @@
 
 <!--</div>-->
 <!--Gallery        -->
-        <div class="col-md-6">
+        <div class="col-md-6 jil">
 
            <p>Rather than presenting an illustrated journey, the exhibition presents visitors with an immersive, soundscape-driven experience that draws an imaginary journey from an object to the artwork, making the journey an exciting experience to be discovered by children and adults alike.
 
@@ -481,10 +481,16 @@
       
       $('.about-li').click(function(){
          console.log('about');
+        $("html, body").animate({
+        scrollTop: $('.p1').offset().top
+    });
       });
     
     $('.jil-li').click(function(){
          console.log('jil');
+        $("html, body").animate({
+        scrollTop: $('.jil').offset().top
+    });
       });
       </script>     
       
