@@ -22,7 +22,7 @@
               position: fixed;
               z-index: 222222;
           }
-          .loader h2{
+          .loader p{
               padding-top: 45vh;
               font-size: 18pt;
           }
@@ -40,7 +40,7 @@
 <title>Starting Point</title>
   </head>
   <body>
-      <div class="loader"><h2>LOADING...</h2></div>
+      <div class="loader"><p>LOADING...</p></div>
       <div class="wrapper">
 <nav class="navbar-default navbar navbar-expand-md navbar-dark" id="nav" >
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
@@ -474,10 +474,10 @@
     </script>
       <script>
       
-          $(window).ready(function(){
+          $(document).ready(function(){
               console.log('ready');
               $('.loader').hide();
-             $( ".wrapper" ).fadeIn( "slow", function() {
+             $( ".wrapper" ).fadeIn( "fast", function() {
     // Animation complete
   });
           });
