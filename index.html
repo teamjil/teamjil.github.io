@@ -13,6 +13,7 @@
       <link rel="stylesheet" type="text/css" href="assets/css/main-stylesheet.css">
       <link rel="stylesheet" type="text/css" href="assets/css/mobile-stylesheet.css">
       <link rel="stylesheet" type="text/css" href="assets/css/loader.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <style>
           a:hover{
               color: red !important;
@@ -101,7 +102,7 @@
 
       
     <!-- Paragraph 2 -->
-    <div class="row p2" style="">
+    <div class="row p2" style="" class="aos-item" data-aos="fade-up">
 
       <div class="col-lg-6" style="padding-right: 30px;">
            <h1>Starting Point</h1>
@@ -117,7 +118,7 @@
     </div>
           
           
-<!-- Video grid -->
+<!-- Video grid Desktop -->
 <div class="video-grid-container desktop" style="">
         <div class="row" id="3_grid" style="">          
             
@@ -202,8 +203,73 @@
     <!-- Clock -->
   </div>      
 </div>
-<!-- Video grid -->
+<!-- Video grid Desktop -->
 
+<!-- Video grid Mobile -->
+<div class="video-grid-container mobile" style="">
+        <div class="row" id="3_grid" style="">          
+            
+            <!--Bricks-->
+            <div class="col-sm">
+
+                    <!-- Embed code here -->
+                    <div style="padding:56.35% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+             </div>  
+            <!--Bricks-->
+            
+            <!--DOT-->
+            <div class="col-sm">
+
+                    <!-- Embed code here -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670890?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+     
+                </div>
+            <!--DOT-->
+            
+             <!--Stamp-->
+            <div class="col-sm">
+
+                    <!-- Embed code here -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670795?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+            </div>
+            <!--Stamp-->
+            
+        </div> 
+
+<div class="row" id="3_grid">          
+    <!-- Vessel -->
+    <div class="col-sm">
+     
+            <!-- Embed code here -->
+            <div style="padding:56.35% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335671636?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        </div>   
+    <!-- Vessel -->
+    
+    <!-- Rocks -->
+    <div class="col-sm">
+
+            <!-- Embed code here -->
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335671483?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  
+        </div>
+    <!-- Rocks -->
+    
+    <!-- Clock -->
+    <div class="col-sm">
+  
+            <!-- Embed code here -->
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335669575?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        
+        </div>
+    <!-- Clock -->
+  </div>      
+</div>
+<!-- Video grid Mobile -->
+    
+    
 <!-- Paragraph 1 -->
     <div class="row p1" style="">
       <div class="col-md-6" id="1_2_p">
@@ -262,6 +328,7 @@
       <!-- Parallax -->
       <script src="assets/js/parallax.js-1.5.0/parallax.js"></script>
       <script src="assets/js/parlx.js-master/src/parlx.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       
     <script src="/assets/js/canvas-video-player.js"></script>
     <script>
@@ -454,13 +521,58 @@
       });
       </script>     
       
+<!--
       <script>
-      
-                    $('#thumbnail').css(        
-    'cursor','url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI3c-_7z0PvEYqa_rHgq_r9QR01IYamixHBW8z7R4Xvn46TiNn),default'
-);
 
+$('.col-sm').hover(function(){
+    console.log("thumbnail");
+    let thumbnail_v = $('#thumbnail').attr('src');
+    console.log(thumbnail_v);
+});          
+          
+$('#thumbnail').hover(function(){
+    console.log("thumbnail");
+    let thumbnail = $('#thumbnail').attr('src');
+    console.log(thumbnail);
+//        $('#thumbnail').attr('src','assets/images/video_thumbnails/bricks_o.png');
+}, function(){
+//    $('#thumbnail').attr('src','assets/images/video_thumbnails/bricks_s.png');
+});
+          
       
+      </script>
+-->
+      
+      <script>
+      AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+          
+          easing: 'ease-out-back',
+   duration: 800,
+   delay: 300,
+   once: true,
+   disable: 'mobile'
+          
+
+});
       </script>
       
   </body>

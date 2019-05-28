@@ -74,7 +74,9 @@
     #thumbnail:hover{
         background-color: aqua;
         opacity: 0.8;
+        display: block;
     }
+    
     #thumbnail{
         transition: 0.3s !important;
     }
@@ -103,4 +105,11 @@
     .ml-auto, .mx-auto{
         
     }
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    
 }
