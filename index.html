@@ -39,10 +39,8 @@
   <body>
       <div class="loader">
           <div class="loader-wrapper">
-              <div class="spinner-border text-light" role="status">
-                <span class="sr-only">Loading...</span>
-              </div>
-              <p>loading</p>
+              <div class="spinner-border text-light" role="status"></div>
+              <p style="font-size: 14px !important;">loading</p>
           </div>
       </div>
       <div class="wrapper">
@@ -92,11 +90,11 @@
     </div>
 </nav>
       
-
-<video id="video" autoplay muted loop playsinline poster="https://valiauga.github.io/canvas-video-player/fall-back.jpg">
-    <source src="https://valiauga.github.io/canvas-video-player/teaser_1.mp4" type="video/mp4" />
+<!-- Video -->
+<video data-parlx class="parallax" data-parallax="scroll" id="video" autoplay muted loop playsinline poster="https://valiauga.github.io/canvas-video-player/fall-back.jpg">
+    <source class="parlx-children" src="https://valiauga.github.io/canvas-video-player/teaser_1.mp4" type="video/mp4" />
 </video>
-      
+<!-- Video -->      
       
       
 <div class="container-fluid" style="">
@@ -114,15 +112,16 @@
            </div>
 
         <div class="col-md-6">
-        <img class="img_2col order-first" id="2_col_img" src="assets/images/Exhibition_postcard.jpg">
+        <img class="img_2col order-first " id="2_col_img" src="assets/images/Exhibition_postcard.jpg">
         </div>
     </div>
           
           
-    <!-- Video grid -->
-    <div class="video-grid-container desktop" style="">
+<!-- Video grid -->
+<div class="video-grid-container desktop" style="">
         <div class="row" id="3_grid" style="">          
             
+            <!--Bricks-->
             <div class="col-sm">
                   <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
                     <img id="thumbnail" src="assets/images/video_thumbnails/bricks_s.png" style="cursor:pointer; width: 100%;" />
@@ -131,8 +130,10 @@
                     <!-- Embed code here -->
                     <div style="padding:56.35% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                   </div>
-                </div>      
+             </div>  
+            <!--Bricks-->
             
+            <!--DOT-->
             <div class="col-sm">
                   <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
                     <img id="thumbnail" src="assets/images/video_thumbnails/dot_s.png" style="cursor:pointer; width: 100%;" />
@@ -140,25 +141,28 @@
 
                   <div style="display:none">
                     <!-- Embed code here -->
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670890?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                   </div>
-
                 </div>
+            <!--DOT-->
+            
+             <!--Stamp-->
             <div class="col-sm">
-
                   <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
                     <img id="thumbnail" src="assets/images/video_thumbnails/stamp_s.png" style="cursor:pointer; width: 100%;" />
                   </div>
 
-                  <div style="display:none">
+                <div style="display:none">
                     <!-- Embed code here -->
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                  </div>
-
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670795?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                 </div>
-        </div>
+            </div>
+            <!--Stamp-->
+            
+        </div> 
 
 <div class="row" id="3_grid">          
+    <!-- Vessel -->
     <div class="col-sm">
           <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
             <img id="thumbnail" src="assets/images/video_thumbnails/vessel_s.png" style="cursor:pointer; width: 100%;" />
@@ -166,35 +170,39 @@
 
           <div style="display:none">
             <!-- Embed code here -->
-            <div style="padding:56.35% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:56.35% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335671636?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
           </div>
-        </div>          
+        </div>   
+    <!-- Vessel -->
+    
+    <!-- Rocks -->
     <div class="col-sm">
-
           <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
             <img id="thumbnail" src="assets/images/video_thumbnails/rocks_s.png" style="cursor:pointer; width: 100%;" />
           </div>
 
           <div style="display:none">
             <!-- Embed code here -->
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335671483?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
           </div>
-
         </div>
+    <!-- Rocks -->
+    
+    <!-- Clock -->
     <div class="col-sm">
-
           <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
             <img id="thumbnail" src="assets/images/video_thumbnails/clock_s.png" style="cursor:pointer; width: 100%;" />
           </div>
 
           <div style="display:none">
             <!-- Embed code here -->
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335669575?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
           </div>
-
         </div>
+    <!-- Clock -->
+  </div>      
 </div>
-</div>
+<!-- Video grid -->
 
 <!-- Paragraph 1 -->
     <div class="row p1" style="">
@@ -223,7 +231,7 @@
            <p style="font-size: 14px; line-height: 25px;">JIL is a project basis collaboration between London based designers Justas Mozutas (Interaction design), Lukas Valiauga (Interaction design) and Inga Galvanauskaitė (producer).<br></p>
            <a  target="_blank" href="https://valiaugalukas.lt">www.valiaugalukas.lt</a> <br>
            <a  target="_blank" href="https://jmotuzas.com">www.jmotuzas.com</a> <br>
-           <a  target="_blank" href="https://jmotuzas.com">www.ingos.lt</a> <br>
+           <a  target="_blank" href="https://ingos.lt">www.ingos.lt</a> <br>
            </div>
     </div>
     <!-- About -->
@@ -251,7 +259,10 @@
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+      <!-- Parallax -->
+      <script src="assets/js/parallax.js-1.5.0/parallax.js"></script>
+      <script src="assets/js/parlx.js-master/src/parlx.js"></script>
+      
     <script src="/assets/js/canvas-video-player.js"></script>
     <script>
 	
@@ -406,6 +417,7 @@
 
     </script>  
 -->
+      
     <script>
     let vh = $(window).height();
       $(window).scroll(function(){
@@ -441,6 +453,15 @@
     });
       });
       </script>     
+      
+      <script>
+      
+                    $('#thumbnail').css(        
+    'cursor','url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI3c-_7z0PvEYqa_rHgq_r9QR01IYamixHBW8z7R4Xvn46TiNn),default'
+);
+
+      
+      </script>
       
   </body>
 </html>
