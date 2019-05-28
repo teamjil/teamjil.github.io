@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) {
   body{
         overflow-x: hidden;
-        font-family: 'Lato', sans-serif !important;
+        font-family: 'Open Sans','Lato', sans-serif !important;
     }
     h1{
         font-size: 24px !important;
@@ -91,7 +91,7 @@
         padding-top: 25px;
     }
     .video-grid-container{
-        padding-top: 50px; 
+        padding-top: 25px; 
         padding-bottom: 50px;
     }
     .p3{
