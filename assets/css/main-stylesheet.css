@@ -1,16 +1,18 @@
 @media only screen and (min-width: 768px) {
     body{
         overflow-x: hidden;
-        font-family: 'Lato', sans-serif !important;
+        font-family: 'Open Sans','Lato', sans-serif !important;
     }
     h1{
-        font-size: 1.9rem !important;
-        text-decoration: underline;
+        font-size: 24px !important;
+        font-weight: 600 !important;
+        padding-bottom: 10px;
+/*        text-decoration: underline;*/
     }
     p{
-        font-size: 0.95rem;
-        line-height: 1.6rem;
-        letter-spacing: 0.05rem;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.01rem;
     }
     #video{
 /*        height: 100vh;*/
@@ -67,10 +69,14 @@
     }
     .nav-link {
         color: rgb(255, 255, 255) !important;
+        transition: 0.3s !important;
     }
     #thumbnail:hover{
         background-color: aqua;
         opacity: 0.8;
+    }
+    #thumbnail{
+        transition: 0.3s !important;
     }
     .container-fluid{
         padding: 50px 100px !important;
@@ -82,11 +88,11 @@
         padding-left: 30px;
     }
     .p2{
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .video-grid-container{
         padding-top: 100px; 
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
     .p3{
         padding-bottom: 100px;
