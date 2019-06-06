@@ -7,26 +7,66 @@
 
       <!--Custom css-->
       <link rel="stylesheet" href="/assets/css/slider.css" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">  
+<!--    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&display=swap" rel="stylesheet">  
       
-      
-      <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css"/>
-      <link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css"/>
       <link rel="stylesheet" type="text/css" href="assets/css/main-stylesheet.css">
       <link rel="stylesheet" type="text/css" href="assets/css/mobile-stylesheet.css">
-
-      
+      <link rel="stylesheet" type="text/css" href="assets/css/loader.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- Favicon -->
+     <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
+      <style>
+          a:hover{
+              color: red !important;
+          }
+          a{
+              color: black !important;
+              text-decoration: underline !important;
+              font-size: 12px;
+              font-weight: 600;
+              transition: 0.3s;;
+          }
+          a.nav-link{
+              text-decoration: none !important;
+              font-size: 12px;
+              letter-spacing: 1.1px;
+          }
+          .logo-li{
+              cursor: pointer;
+          }
+      </style>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      
+<!-- Bootstrap CSS -->
+	  
+<!-- Hotjar Tracking Code for http://startingpointexhibition.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1341287,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Hotjar Tracking Code for http://startingpointexhibition.com -->
+	  
 <title>Starting Point</title>
   </head>
   <body>
-      
+      <div class="loader">
+          <div class="loader-wrapper">
+              <div class="spinner-border text-light" role="status"></div>
+              <p style="font-size: 14px !important;">loading</p>
+          </div>
+      </div>
+      <div class="wrapper">
 <nav class="navbar-default navbar navbar-expand-md navbar-dark" id="nav" >
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item active logo-li">
 <!--                <a class="nav-link" href="#">Left</a>-->
                 <img src="/assets/images/JIL.png" alt="Logo" style="width:50px;">
             </li>
@@ -54,242 +94,275 @@
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+            <li class="nav-item jil-li">
+                <a class="nav-link" href="#">Starting Point</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">What's JIL?</a>
+            
+            <li class="nav-item about-li">
+                <a class="nav-link about" href="#">About the project</a>
+            </li>
+            
+            <li class="nav-item ">
+                <a class="nav-link about" target="_blank" href="mailto:startingpointexhibition@gmail.com">Contact us</a>
             </li>
         </ul>
     </div>
 </nav>
       
-<!--
-<nav class="navbar navbar-expand-sm navbar-default" id="nav">
-       <a class="navbar-brand" href="#">    
-        <img src="/assets/images/JIL.png" alt="Logo" style="width:50px;">
-      </a>
-      <div class="col-sm-5" style="">Link</div>
-    
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Right</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-    </div>
-    
-</nav>
--->
-      
-<!-- The video -->
-<video autoplay muted loop id="video">
-  <source src="/assets/video/teaser.mp4" type="video/mp4">
+<!-- Video -->
+<video data-parlx class="parallax" data-parallax="scroll" id="video" autoplay muted loop playsinline poster="https://teamjil.github.io/assets/video/fall-back.jpg">
+    <source class="parlx-children" src="https://teamjil.github.io/assets/video/teaser_2.mp4" type="video/mp4" />
+
 </video>
-<div id="video"></div>
+<!-- Video -->      
       
       
 <div class="container-fluid" style="">
 
-    <!-- Paragraph 1 -->
-    <div class="row p1" style="">
-      <div class="col-md-6" id="1_2_p">
-        <img class="img_2col" id="2_col_img" src="assets/images/Norbert-Tukaj_4.jpg">
-        </div>
-      <div class="col-md-6 t1" style="">
-           <h1>Problem</h1>
-           <p>Finding new ways to engage the public is a challenge that even the biggest museums and cultural institutions are facing today. Yet, for MO Museum – a new modern art museum in Vilnius, Lithuania – this challenge is their mission. They aim to present art in ways that are both innovative and immersive, attracting the widest audiences and, in turn, making culture more accessible to everyone.</p>
-           </div>
-    </div>
       
     <!-- Paragraph 2 -->
-    <div class="row p2" style="">
+    <div class="row p2" style="" class="aos-item" data-aos="fade-up">
 
-      <div class="col-md-6" style="padding-right: 30px;">
-           <h1>Idea</h1>
-           <p>In the museum’s second exhibition, ‘Starting Point’, the exhibition team (comprised of interaction designers and curators) set out to take visitors on a journey through the creative process itself, enabling the public to discover unique starting points that, in one way or another, led the artists to creating their artwork.
-
-    The exhibition showcases the work of six contemporary Lithuanian artists whose work connects through the themes of distance, movement and the passing of time.
-
-    Blending the use of interactive technologies, experience design and sound art, the exhibition team has devised a system of objects to represent the starting point for each artwork seen in the exhibition. Scattered across the museum space, these objects wait for visitors to find them. When found, the objects have to be ‘woken up’. Triggers include a series of easy-to-guess interactions, such as knocking, lifting a lid, touching or spinning. When triggered, the objects come to life, each telling a specially curated story about an artist and their starting point for creating one of the artworks seen in the exhibition.</p>
+      <div class="col-lg-6" style="padding-right: 30px;">
+           <h1>Starting Point</h1>
+           <p>Immersive soundscape exhibition project created for MO, Modern art museum in Vilnius, Lithuania. The project takes visitors on a journey through artist’s creative process, enabling the public to discover unique starting points that, in one way or another, led the artists shown to creating their artwork.
+          <br><br>Interactive objects represent each artwork. Triggered, these objects come to life, each telling visitor a story about an art piece and an artist’s journey to it. 
+          <br>
+          </p>
+          <a id="press-release" style="font-size: 16px;" href="/assets/Starting%20Point%202019.zip">Download Press Release</a>
            </div>
 
         <div class="col-md-6">
-        <img class="img_2col" id="2_col_img" src="assets/images/Exhibition_postcard.jpg">
+        <img class="img_2col order-first " id="2_col_img" src="assets/images/Exhibition_postcard.jpg">
         </div>
     </div>
+    <!-- Paragraph 2 -->      
           
           
-    <!-- Video grid -->
-    <div class="video-grid-container" style="">
+<!-- Video grid Desktop -->
+<div class="video-grid-container desktop" style="">
         <div class="row" id="3_grid" style="">          
             
+            <!--Bricks-->
             <div class="col-sm">
                   <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-                    <img id="thumbnail" src="assets/images/video_thumbnails/bricks.png" style="cursor:pointer; width: 100%;" />
+                    <img id="thumbnail" src="assets/images/video_thumbnails/bricks_s.png" style="cursor:pointer; width: 100%;" />
                   </div>
                   <div style="display:none">
                     <!-- Embed code here -->
                     <div style="padding:56.35% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                   </div>
-                </div>      
+             </div>  
+            <!--Bricks-->
             
+            <!--DOT-->
             <div class="col-sm">
                   <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-                    <img id="thumbnail" src="assets/images/video_thumbnails/dot.png" style="cursor:pointer; width: 100%;" />
+                    <img id="thumbnail" src="assets/images/video_thumbnails/dot_s.png" style="cursor:pointer; width: 100%;" />
                   </div>
 
                   <div style="display:none">
                     <!-- Embed code here -->
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670890?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                   </div>
-
                 </div>
+            <!--DOT-->
+            
+             <!--Stamp-->
             <div class="col-sm">
-
                   <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-                    <img id="thumbnail" src="assets/images/video_thumbnails/stamp.png" style="cursor:pointer; width: 100%;" />
+                    <img id="thumbnail" src="assets/images/video_thumbnails/stamp_s.png" style="cursor:pointer; width: 100%;" />
                   </div>
 
-                  <div style="display:none">
+                <div style="display:none">
                     <!-- Embed code here -->
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                  </div>
-
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670795?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                 </div>
-        </div>
+            </div>
+            <!--Stamp-->
+            
+        </div> 
 
 <div class="row" id="3_grid">          
+    <!-- Vessel -->
     <div class="col-sm">
           <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-            <img id="thumbnail" src="assets/images/video_thumbnails/vessel.png" style="cursor:pointer; width: 100%;" />
+            <img id="thumbnail" src="assets/images/video_thumbnails/vessel_s.png" style="cursor:pointer; width: 100%;" />
           </div>
 
           <div style="display:none">
             <!-- Embed code here -->
-            <div style="padding:56.35% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:56.35% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335671636?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
           </div>
-        </div>          
-    <div class="col-sm">
-
-          <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-            <img id="thumbnail" src="assets/images/video_thumbnails/rocks.png" style="cursor:pointer; width: 100%;" />
-          </div>
-
-          <div style="display:none">
-            <!-- Embed code here -->
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-
-        </div>
-    <div class="col-sm">
-
-          <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-            <img id="thumbnail" src="assets/images/video_thumbnails/clock.png" style="cursor:pointer; width: 100%;" />
-          </div>
-
-          <div style="display:none">
-            <!-- Embed code here -->
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-
-        </div>
-</div>
-</div>
+        </div>   
+    <!-- Vessel -->
     
-<!--Paragraph 3-->   
-    <div class="row p3" style="">
-  <div class="col-md-6">
-      <div id="slider-wrap">
-      	  <ul id="slider">
-              
-          	 <li data-color="#1abc9c">
-                <div>
-                    <h3>Slide #1</h3>
-                    <span>Sub-title #1</span>
-                </div>                
-                <i class="fa fa-image"></i>
-                 <img class="carousel-img" src="assets/images/image_slider/Vessel_Justinas%20Auskelis.jpg" style="">
-             </li>
-             
-             <li data-color="#3498db">
-                <div>
-                    <h3>Slide #2</h3>
-                    <span>Sub-title #2</span>
-                </div>
-                <i class="fa fa-gears"></i>
-                 <img class="carousel-img" src="assets/images/image_slider/Dot_Egle%20Jasiukaityte.jpg" style="">
-             </li>
-             
-             <li data-color="#9b59b6">
-                <div>
-                    <h3>Slide #3</h3>
-                    <span>Sub-title #3</span>
-                </div>
-                <i class="fa fa-sliders"></i>
-                 <img class="carousel-img" src="assets/images/image_slider/Stamp_Irmantas%20Gelunas.jpg" style="">
-             </li>
-             
-             <li data-color="#34495e">
-                <div>
-                    <h3>Slide #4</h3>
-                    <span>Sub-title #4</span>
-                </div>
-                <i class="fa fa-code"></i>
-                 <img class="carousel-img" src="assets/images/image_slider/Bricks_Egle%20Jasiukaityte.jpg" style="">
-             </li>
-             
-             <li data-color="#e74c3c">
-                <div>
-                    <h3>Slide #5</h3>
-                    <span>Sub-title #5</span>
-                </div>
-                <i class="fa fa-microphone-slash"></i>
-                 <img class="carousel-img" src="assets/images/image_slider/Bricks_Julius%20Kalinskas.jpg" style="">
-             </li>
-             
-             
-          </ul>
-    
-          
-           <!--controls-->
-          <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
-          <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
-          <div id="counter"></div>
-          
-          <div id="pagination-wrap">
-            <ul>
-            </ul>
+    <!-- Rocks -->
+    <div class="col-sm">
+          <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+            <img id="thumbnail" src="assets/images/video_thumbnails/rocks_s.png" style="cursor:pointer; width: 100%;" />
           </div>
-          <!--controls-->  
-                 
+
+          <div style="display:none">
+            <!-- Embed code here -->
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335671483?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
+    <!-- Rocks -->
+    
+    <!-- Clock -->
+    <div class="col-sm">
+          <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+            <img id="thumbnail" src="assets/images/video_thumbnails/clock_s.png" style="cursor:pointer; width: 100%;" />
+          </div>
+
+          <div style="display:none">
+            <!-- Embed code here -->
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335669575?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
+    <!-- Clock -->
+  </div>      
 </div>
+<!-- Video grid Desktop -->
 
-      
+<!-- Video grid Mobile -->
+<div class="video-grid-container mobile" style="">
+        <div class="row" id="3_grid" style="">          
+            
+            <!--Bricks-->
+            <div class="col-sm">
+                
+                    <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                        <img id="thumbnail" src="assets/images/video_thumbnails/bricks_p.png" style="cursor:pointer; width: 100%;" />
+                    </div>
+                    
+                    <div style="display:none">
+                    <!-- Embed code here -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670102?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                
+             </div>  
+            <!--Bricks-->
+            
+            <!--DOT-->
+            <div class="col-sm">
+                
+                    <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                        <img id="thumbnail" src="assets/images/video_thumbnails/dot_p.png" style="cursor:pointer; width: 100%;" />
+                    </div>
+                    
+                    <div style="display:none">
+                    <!-- Embed code here -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670890?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                
+                </div>
+            <!--DOT-->
+            
+             <!--Stamp-->
+            <div class="col-sm">
+                
+                    <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                        <img id="thumbnail" src="assets/images/video_thumbnails/stamp_p.png" style="cursor:pointer; width: 100%;" />
+                    </div>
+                    
+                    <div style="display:none">
+                    <!-- Embed code here -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335670795?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                
+            </div>
+            <!--Stamp-->
+            
+        </div> 
 
-    </div>
-        <div class="col-md-6">
-
-           <p>Rather than presenting an illustrated journey, the exhibition presents visitors with an immersive, soundscape-driven experience that draws an imaginary journey from an object to the artwork, making the journey an exciting experience to be discovered by children and adults alike.
-
-    The project is a collaboration between MO Museum and London-based interactive designers Inga Galvanauskaite, Lukas Valiauga and Justas Motuzas, and curators Marius Armonas and Gabriele Radzeviciute.</p>
+<div class="row" id="3_grid">          
+    <!-- Vessel -->
+    <div class="col-sm">
+        
+            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                <img id="thumbnail" src="assets/images/video_thumbnails/vessel_p.png" style="cursor:pointer; width: 100%;" />
+            </div>
+            
+            <div style="display:none">
+            <!-- Embed code here -->
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335671636?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        
+        </div>   
+    <!-- Vessel -->
+    
+    <!-- Rocks -->
+    <div class="col-sm">
+        
+            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                <img id="thumbnail" src="assets/images/video_thumbnails/rocks_p.png" style="cursor:pointer; width: 100%;" />
+            </div>
+            
+            <div style="display:none">
+            <!-- Embed code here -->
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335671483?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
+    <!-- Rocks -->
+    
+    <!-- Clock -->
+    <div class="col-sm">
+        
+            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                <img id="thumbnail" src="assets/images/video_thumbnails/clock_p.png" style="cursor:pointer; width: 100%;" />
+            </div>
+        
+         <div style="display:none">
+            <!-- Embed code here -->
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335669575?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        </div>
+    <!-- Clock -->
+  </div>      
+</div>
+<!-- Video grid Mobile -->
+  
+    
+<!-- Paragraph 1 -->
+    <div class="row p1" style="">
+      <div class="col-md-6" id="1_2_p">
+        <img class="img_2col" id="2_col_img" src="assets/images/Norbert-Tukaj_4.jpg">
+        </div>
+      <div class="col-md-6 t1" style="">
+           <h1>About the project</h1>
+           <p style="">“Finding new ways to engage the public is a challenge that even the biggest museums and cultural institutions are facing today. Yet, for MO Museum – a new modern art museum in Vilnius, Lithuania – this challenge is their mission.” <br></p>
+<!--
+           <p style="font-weight: 400; margin-bottom: 5px;"> 
+           Project realised by JIL Studio in collaboration with: 
+          </p>
+-->
+          <h1 style="font-size: 21px !important; margin-bottom: 0px;">Project realised by JIL Studio in collaboration with:</h1>
+          <p style="color: #696969;">
+           Curators - Gabrielė Radzevičiūtė, Marius Armonas 
+           <br>Sound designer - Antanas Dombrovskij
+           <br>Designers - Barbora Šulniūtė &amp; Martynas Gailiušas
+           </p>
            </div>
-    </div>          
-<!--Paragraph 3-->    
-      
-    <!-- About -->
-    <hr>
+    </div>    
+<!-- Paragraph 1 --> 
+
+<!--    <hr>-->
     <div class="row p4" style="">
-
-      <div class="col-md-2" id="1_2_p">
-        <img class="img_2col" id="2_col_img" src="assets/images/JIL-bw.png";>
+	    
+         <div class="col-md-2" id="1_2_p">
+        	<img class="img_2col" id="2_col_img" style="min-width: 150px;" src="assets/images/JIL-bw.png";>
         </div>
-      <div class="col-md-6" style="padding-left: 30px;">
-           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-           </div>
+
+	    
+       <div class="col-md-6" style="padding-left: 30px;">
+           <p style="font-size: 18px; line-height: 25px;">JIL is a creative studio comprised of London based designers Justas Mozutas, Lukas Valiauga and Inga Galvanauskaitė.<br></p>
+           <a style="font-size: 14px" target="_blank" href="https://valiaugalukas.lt">www.valiaugalukas.lt</a> <br>
+           <a style="font-size: 14px" target="_blank" href="https://jmotuzas.com">www.jmotuzas.com</a> <br>
+           <a style="font-size: 14px" target="_blank" href="https://ingos.lt">www.ingos.lt</a> <br>
+      </div>
+	    	    
     </div>
     <!-- About -->
     
@@ -299,7 +372,7 @@
     <footer class="page-footer font-small blue" style="background-color: black;">
 
       <!-- Copyright -->
-      <div class="footer-copyright text py-3" style="padding-left: 100px;">© Copyright:
+      <div class="footer-copyright text py-3" style="padding-left: 20px; font-size: 12px; ">© JIL 2019
         <a href="https://mdbootstrap.com/education/bootstrap/"> JIL</a>
       </div>
       <!-- Copyright -->
@@ -307,12 +380,46 @@
     </footer>
     <!-- Footer -->
 
+</div> <!-- WRAPPER-->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
+      <!-- Parallax -->
+      <script src="assets/js/parallax.js-1.5.0/parallax.js"></script>
+      <script src="assets/js/parlx.js-master/src/parlx.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+    <script src="/assets/js/canvas-video-player.js"></script>
+    <script>
+	
+	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+	if (isIOS) {
+ 
+		var canvasVideo = new CanvasVideoPlayer({
+			videoSelector: '.video',
+			canvasSelector: '.canvas',
+			timelineSelector: false,
+			autoplay: true,
+			makeLoop: true,
+			pauseOnClick: false,
+			audio: false
+		});
+		
+	}else {
+		
+		// Use HTML5 video
+		document.querySelectorAll('.canvas')[0].style.display = 'none';
+		
+	}	
+	
+	</script>
+      
+<!--
     <script>
     //current position
     var pos = 0;
@@ -423,6 +530,9 @@
 
 
     </script>
+-->
+      
+<!--
     <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -437,6 +547,8 @@
     })();
 
     </script>  
+-->
+      
     <script>
     let vh = $(window).height();
       $(window).scroll(function(){
@@ -445,5 +557,95 @@
 
     </script>
       
+    <script>
+          $(window).on("load",function(){
+             console.log('ready');
+             $('.loader').hide();
+             $( ".wrapper" ).fadeIn( "fast", function() {
+                 // Animation complete
+            });
+          });
+    </script>
+      
+      
+<script>
+      
+      $('.about-li').click(function(){
+         console.log('about');
+        $("html, body").animate({
+        scrollTop: $('.p1').offset().top
+    });
+      });
+    
+    $('.jil-li').click(function(){
+         console.log('jil');
+        $("html, body").animate({
+        scrollTop: $('.p2').offset().top -20
+    });
+      });
+    
+    $('.logo-li').click(function(){
+         console.log('logo');
+        $("html, body").animate({
+        scrollTop: $('.footer-copyright').offset().top -20
+    });
+      });
+      </script>     
+      
+<!--
+      <script>
+
+$('.col-sm').hover(function(){
+    console.log("thumbnail");
+    let thumbnail_v = $('#thumbnail').attr('src');
+    console.log(thumbnail_v);
+});          
+          
+$('#thumbnail').hover(function(){
+    console.log("thumbnail");
+    let thumbnail = $('#thumbnail').attr('src');
+    console.log(thumbnail);
+//        $('#thumbnail').attr('src','assets/images/video_thumbnails/bricks_o.png');
+}, function(){
+//    $('#thumbnail').attr('src','assets/images/video_thumbnails/bricks_s.png');
+});
+          
+      
+      </script>
+-->
+      
+      <script>
+      AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+          
+          easing: 'ease-out-back',
+   duration: 800,
+   delay: 300,
+   once: true,
+   disable: 'mobile'
+          
+
+});
+      </script>
+     
+	  
   </body>
 </html>
